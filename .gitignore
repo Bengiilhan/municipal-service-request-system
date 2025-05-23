@@ -1,0 +1,30 @@
+# Python & Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+.env              # Ortam değişkenleri (şifre, secret key)
+*.env             # Ek güvenlik
+
+# Virtual environments
+env/
+venv/
+
+# Django media & static (opsiyonel)
+media/
+staticfiles/
+
+# Node & React
+frontend/node_modules/
+frontend/build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode & PyCharm
+.vscode/
+.idea/
+
+# OS temp
+*.swp
