@@ -15,8 +15,9 @@ class ServiceRequest(models.Model):
     video = models.FileField(upload_to='videos/', null=True, blank=True)
     latitude = models.FloatField()
     longitude = models.FloatField()
+    address = models.CharField(max_length=255, blank=True, null=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
-
+    is_deleted = models.BooleanField(default=False)  # ✅ Soft delete alanı
     def __str__(self):
         return f"{self.title} - {self.status}"
