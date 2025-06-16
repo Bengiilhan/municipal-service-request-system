@@ -3,8 +3,9 @@ __pycache__/
 *.py[cod]
 *.sqlite3
 *.log
-.env              # Ortam değişkenleri (şifre, secret key)
-*.env             # Ek güvenlik
+.env             
+*.env             
+**/.env
 
 # Virtual environments
 env/
